@@ -1,18 +1,17 @@
+import re
 from inspect import cleandoc
 from io import StringIO
 
-import re
-
 from lark import Lark
 from railroad import (  # type: ignore
-    Diagram,
     Choice,
+    Diagram,
+    NonTerminal,
     OneOrMore,
     Optional,
-    Terminal,
-    NonTerminal,
     Sequence,
     Start,
+    Terminal,
 )
 
 with open("bnf-grammar.bnf") as f:
