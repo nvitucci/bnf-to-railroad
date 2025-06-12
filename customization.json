@@ -1,0 +1,5 @@
+{
+  "links": [
+    {"symbol": "<identifier>", "link": "https://www.example.com/identifier"}
+  ]
+}
