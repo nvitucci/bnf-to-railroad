@@ -5,11 +5,11 @@ This command-line tool is intended to process BNF-based grammar files to both ma
 ## Prepare the environment
 
 ```shell
-python -m venv venv
+$ python -m venv venv
 
-source venv/bin/activate
+$ source venv/bin/activate
 
-python -m pip install -r requirements.txt
+$ python -m pip install -r requirements.txt
 ```
 
 ## Format of the customization file
@@ -65,4 +65,4 @@ With a customization file:
 python cli.py diff /path/to/source/file.bnf /path/to/asciidoc/examples/file.bnf --customization-file customization.json
 ```
 
-It is important to add customizations on both the source and the destination file for the diff to make sense.
+It is important to add customizations (if any) on both the source and the destination file for the diff to make sense.
