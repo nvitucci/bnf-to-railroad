@@ -50,7 +50,6 @@ def diff(source_file, dest_file, customization_file):
 @click.argument("result-svg", type=click.File("w"))
 @click.option("--customization-file", type=click.File("r"))
 @click.option("--allow-links", is_flag=True)
-@click.option("--check", is_flag=True)
 def gen_diagrams(grammar_file, result_svg, customization_file, allow_links):
     bnf = grammar_file.read()
     links = {}
